@@ -88,13 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    protected void onStop(){
-        super.onStop();
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor prefEdit = prefs.edit();
-        prefEdit.putString("accessCode", accessCode);
-        prefEdit.commit();
-    }
+ 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
